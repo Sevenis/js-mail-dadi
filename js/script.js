@@ -17,10 +17,12 @@
 // Generare un numero random da 1  a 6, sia per il giocatore sia per il computer
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
+// inizializzo variabili
 var dado1 = Math.floor(Math.random() * 6 ) + 1;
 var dado2 = Math.floor(Math.random() * 6 ) + 1;
 var check = "I due dadi sono uguali!"
 
+// Processo check valori
 if (dado1 != dado2) {
     if (dado1 > dado2) {
         check = "Vince Player One!";
@@ -29,4 +31,5 @@ if (dado1 != dado2) {
     }
 }
 
+// stampo messaggio esito
 document.getElementById('lancio-dado').innerHTML = "Player One lancia " + dado1 + " e Player Two lancia " + dado2 + '. ' + check;
