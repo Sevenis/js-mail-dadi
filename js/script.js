@@ -20,14 +20,14 @@
 // inizializzo variabili
 var dado1 = Math.floor(Math.random() * 6 ) + 1;
 var dado2 = Math.floor(Math.random() * 6 ) + 1;
-var check = "I due dadi sono uguali!"
+var check = "I due dadi sono uguali!";
 
 // Processo check valori
 if (dado1 != dado2) {
     if (dado1 > dado2) {
         check = "Vince Player One!";
     } else {
-        check = "Vince Player Two!"
+        check = "Vince Player Two!";
     }
 }
 
